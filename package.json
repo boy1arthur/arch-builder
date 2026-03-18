@@ -1,0 +1,15 @@
+{
+  "name": "asurada-arch-builder",
+  "version": "1.0.0",
+  "description": "Visual Project Scaffolder for CLI-centric workflows. Bridging the gap between terminal speed and GUI intuition.",
+  "main": "bridge-server.js",
+  "scripts": {
+    "server": "node bridge-server.js",
+    "client": "cd ui && npm run dev",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd ui && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
